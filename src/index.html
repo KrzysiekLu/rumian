@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marcin Rumianowski – Doradca nieruchomości Warszawa</title>
+<meta name="description" content="Sprzedaż, zakup, wynajem i wycena mieszkań w Warszawie. Marcin Rumianowski – doradca nieruchomości: konkretnie, dyskretnie, z pełnym wsparciem do aktu notarialnego.">
+<link rel="canonical" href="{{siteUrl}}/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pl_PL">
+<meta property="og:title" content="Marcin Rumianowski – Doradca nieruchomości Warszawa">
+<meta property="og:description" content="Sprzedaż, zakup, wynajem i wycena mieszkań w Warszawie.">
+<meta property="og:url" content="{{siteUrl}}/">
+<meta property="og:image" content="{{siteUrl}}/img/hero.jpg">
+<meta name="theme-color" content="#020617">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="preload" href="/fonts/jakarta-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "RealEstateAgent",
+  "name": "{{name}}",
+  "url": "{{siteUrl}}/",
+  "telephone": "{{phone}}",
+  "email": "{{email}}",
+  "address": { "@type": "PostalAddress", "streetAddress": "{{street}}", "addressLocality": "Warszawa", "addressCountry": "PL" },
+  "areaServed": "Warszawa"
+}
+</script>
+</head>
+<body class="bg-surface text-slate-800 antialiased selection:bg-slate-900 selection:text-white pb-16 md:pb-0">
+<a href="#tresc" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[60] focus:bg-white focus:text-slate-900 focus:px-4 focus:py-2 focus:rounded-lg">Przejdź do treści</a>
+
+<!-- HEADER -->
+<header class="site-header fixed lg:static top-0 left-0 w-full z-50 bg-white/95 lg:bg-white backdrop-blur-md border-b border-surface-border lg:border-b-0">
+  <!-- Górny rząd: logo po lewej, kontakt po prawej (na desktopie przewija się razem ze stroną) -->
+  <div class="max-w-[1380px] mx-auto px-6 lg:px-12 h-20 lg:h-[4.5rem] flex items-center justify-between">
+    <a class="flex items-center gap-3.5 group" href="#" aria-label="Marcin Rumianowski – strona główna">
+      <div class="w-10 h-10 rounded-lg bg-slate-900 text-white flex items-center justify-center font-display font-extrabold text-lg tracking-tight group-hover:bg-slate-800 transition-colors shadow-sm">MR</div>
+      <div class="flex flex-col">
+        <span class="font-display font-bold text-lg text-slate-900 tracking-tight leading-snug">Marcin Rumianowski</span>
+        <span class="hidden sm:block text-xs uppercase tracking-wider text-slate-500 font-medium">Doradca nieruchomości Warszawa</span>
+      </div>
+    </a>
+    <div class="flex items-center gap-3 lg:gap-6">
+      <a class="hidden lg:inline-flex items-center gap-2 text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors" href="mailto:{{email}}">
+        {{i:mail|w-[18px] h-[18px] text-slate-500}}
+        <span>{{email}}</span>
+      </a>
+      <a class="inline-flex items-center gap-2.5 px-4 sm:px-5 py-2.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-white font-display text-xs uppercase tracking-wider font-semibold transition-all shadow-sm" href="tel:{{phone}}" aria-label="Zadzwoń: {{phoneDisplay}}">
+        {{i:phone|w-[18px] h-[18px]}}
+        <span class="hidden sm:inline">{{phoneDisplay}}</span>
+      </a>
+      <button id="menu-btn" type="button" class="lg:hidden p-2.5 rounded-lg border border-slate-200 text-slate-900" aria-expanded="false" aria-controls="mobile-menu" aria-label="Menu">
+        {{i:menu|w-5 h-5}}
+      </button>
+    </div>
+  </div>
+  <nav id="mobile-menu" class="hidden lg:hidden border-t border-surface-border bg-white px-6 py-4" aria-label="Menu mobilne">
+    <ul class="flex flex-col text-base font-medium text-slate-800">
+      <li><a class="block py-3" href="#oferty">Oferty</a></li>
+      <li><a class="block py-3" href="#uslugi">Usługi</a></li>
+      <li><a class="block py-3" href="#proces">Jak pracuję</a></li>
+      <li><a class="block py-3" href="#o-mnie">O mnie</a></li>
+      <li><a class="block py-3" href="#opinie">Opinie</a></li>
+      <li><a class="block py-3" href="#kontakt">Kontakt</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Menu desktop: przykleja się do góry po przewinięciu logo; ikony szybkiego kontaktu pojawiają się, gdy jest przyklejone -->
+<nav class="site-nav hidden lg:block sticky top-0 z-50 bg-white border-t border-b border-surface-border pb-4" aria-label="Główna nawigacja">
+  <div class="relative max-w-[1380px] mx-auto px-12">
+    <ul class="h-14 pb-2 flex items-center justify-center gap-10 text-sm font-medium text-slate-600">
+      <li><a class="nav-link" href="#oferty">Oferty</a></li>
+      <li><a class="nav-link" href="#uslugi">Usługi</a></li>
+      <li><a class="nav-link" href="#proces">Jak pracuję</a></li>
+      <li><a class="nav-link" href="#o-mnie">O mnie</a></li>
+      <li><a class="nav-link" href="#opinie">Opinie</a></li>
+      <li><a class="nav-link" href="#kontakt">Kontakt</a></li>
+    </ul>
+    <div class="hdr-quick absolute right-12 top-0 bottom-2 flex items-center gap-2">
+      <a href="tel:{{phone}}" class="w-9 h-9 rounded-lg bg-slate-900 hover:bg-slate-800 text-white flex items-center justify-center transition-colors" aria-label="Zadzwoń: {{phoneDisplay}}" title="{{phoneDisplay}}">{{i:phone|w-[18px] h-[18px]}}</a>
+      <a href="https://wa.me/{{whatsapp}}" rel="noopener noreferrer" target="_blank" class="w-9 h-9 rounded-lg bg-emerald-700 hover:bg-emerald-800 text-white flex items-center justify-center transition-colors" aria-label="Napisz na WhatsApp" title="WhatsApp">{{i:message-circle|w-[18px] h-[18px]}}</a>
+      <a href="mailto:{{email}}" class="w-9 h-9 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-900 border border-slate-300 flex items-center justify-center transition-colors" aria-label="Napisz e-mail: {{email}}" title="{{email}}">{{i:mail|w-[18px] h-[18px]}}</a>
+    </div>
+  </div>
+  <span class="absolute bottom-4 left-1/2 -translate-x-1/2 h-[2px] w-24 bg-slate-900" aria-hidden="true"></span>
+</nav>
+
+<main id="tresc" class="w-full pt-20 lg:pt-0">
+
+<!-- 1. HERO -->
+<section class="on-dark relative w-full min-h-[640px] pt-16 pb-20 lg:pt-24 lg:pb-28 bg-slate-950 text-white overflow-hidden border-b border-slate-800">
+  <div class="absolute inset-0 z-0">
+    <img alt="" class="w-full h-full object-cover object-center opacity-40 mix-blend-luminosity" src="/img/hero.jpg" fetchpriority="high">
+    <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/90 to-slate-950/70"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-slate-950/80"></div>
+  </div>
+  <div class="relative z-10 max-w-[1380px] mx-auto px-6 lg:px-12">
+    <div class="flex flex-col gap-6 max-w-4xl">
+      <div class="inline-flex items-center gap-2.5 self-start px-3.5 py-1.5 rounded-full bg-slate-900/80 border border-slate-700/80 text-slate-200 text-xs font-semibold uppercase tracking-wider font-display backdrop-blur-md">
+        <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+        Doradca ds. nieruchomości · Warszawa
+      </div>
+      <h1 class="font-display font-extrabold text-4xl sm:text-5xl lg:text-6xl text-white tracking-tight leading-[1.12]">
+        Nieruchomości w Warszawie.<br>
+        <span class="text-slate-400 font-bold">Pewna sprzedaż, świadomy zakup.</span>
+      </h1>
+      <p class="text-slate-300 text-lg lg:text-xl font-normal leading-relaxed max-w-2xl">
+        Kompleksowe wsparcie transakcyjne, audyt prawny i precyzyjna wycena. Prowadzę cały proces bez zbędnych barier i ze stuprocentową dyskrecją.
+      </p>
+      <div class="flex flex-wrap items-center gap-4 pt-3">
+        <a class="inline-flex items-center justify-center px-7 py-4 rounded-lg bg-white text-slate-950 hover:bg-slate-100 transition-all font-display text-sm font-semibold tracking-wide shadow-lg" href="#kontakt">
+          Porozmawiajmy bezpośrednio
+          {{i:arrow-right|ml-2 w-[18px] h-[18px]}}
+        </a>
+        <a class="inline-flex items-center justify-center px-7 py-4 rounded-lg bg-slate-900/80 border border-slate-700 text-white hover:bg-slate-800 transition-all font-display text-sm font-semibold tracking-wide shadow-sm backdrop-blur-md" href="#oferty">
+          Zobacz aktualne oferty
+        </a>
+      </div>
+      <!-- TODO: potwierdzić liczby z Marcinem przed publikacją -->
+      <div class="grid grid-cols-3 gap-6 pt-10 mt-4 border-t border-slate-800/80">
+        <div class="flex flex-col">
+          <span class="font-display font-extrabold text-3xl lg:text-4xl text-white tracking-tight">10+</span>
+          <span class="font-display text-xs lg:text-sm font-semibold text-slate-200 mt-1">Lat w branży</span>
+          <span class="text-xs text-slate-400">Warszawski rynek</span>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-display font-extrabold text-3xl lg:text-4xl text-white tracking-tight">200+</span>
+          <span class="font-display text-xs lg:text-sm font-semibold text-slate-200 mt-1">Transakcji</span>
+          <span class="text-xs text-slate-400">Sprzedaż &amp; zakup</span>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex items-center gap-1">
+            <span class="font-display font-extrabold text-3xl lg:text-4xl text-white tracking-tight">5,0</span>
+            {{i:star|w-6 h-6 text-amber-500 fill-current}}
+          </div>
+          <span class="font-display text-xs lg:text-sm font-semibold text-slate-200 mt-1">Opinie w Google</span>
+          <span class="text-xs text-slate-400">Zweryfikowani klienci</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. OFERTY -->
+<section class="w-full py-24 bg-surface-container" id="oferty">
+  <div class="max-w-[1380px] mx-auto px-6 lg:px-12">
+    <div class="max-w-2xl mb-12">
+      <span class="text-xs uppercase tracking-wider font-semibold font-display text-slate-500">Aktualne nieruchomości</span>
+      <h2 class="font-display font-bold text-3xl lg:text-4xl text-slate-900 mt-1">Oferty w sprzedaży i wynajmie</h2>
+      <p class="text-slate-600 text-base mt-2 leading-relaxed">
+        Pełne dane, zdjęcia i rzuty każdego lokalu dostępne są w ogłoszeniach na oficjalnych profilach na portalach nieruchomości.
+      </p>
+    </div>
+
+    <!-- Karuzela ofert: wypełniana z data/offers.json (ukryta, gdy plik jest pusty) -->
+    <div id="offers" class="hidden mb-12" aria-label="Wybrane oferty">
+      <div class="flex items-center justify-between mb-5">
+        <h3 class="font-display font-bold text-xl text-slate-900">Wybrane oferty</h3>
+        <div class="flex gap-2">
+          <button type="button" data-rail-prev="offers-rail" class="p-2.5 rounded-lg bg-white border border-slate-300 hover:bg-slate-50" aria-label="Poprzednie oferty">{{i:chevron-left|w-5 h-5}}</button>
+          <button type="button" data-rail-next="offers-rail" class="p-2.5 rounded-lg bg-white border border-slate-300 hover:bg-slate-50" aria-label="Następne oferty">{{i:chevron-right|w-5 h-5}}</button>
+        </div>
+      </div>
+      <div id="offers-rail" class="rail" tabindex="0" role="region" aria-label="Karuzela ofert"></div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Otodom -->
+      <div class="bg-white rounded-2xl p-8 lg:p-10 border border-surface-border shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+        <div>
+          <div class="flex items-center gap-3 pb-6 mb-6 border-b border-slate-100">
+            <div class="w-12 h-12 rounded-xl bg-slate-900 text-white font-display font-extrabold flex items-center justify-center text-lg">OD</div>
+            <div>
+              <h3 class="font-display font-bold text-xl text-slate-900">Otodom.pl</h3>
+              <p class="text-xs text-slate-500 font-medium">Profil doradcy</p>
+            </div>
+          </div>
+          <h4 class="font-display font-bold text-lg text-slate-900 mb-2">Mieszkania i lokale w Warszawie</h4>
+          <p class="text-slate-600 text-sm leading-relaxed mb-6">
+            Szczegółowa dokumentacja zdjęciowa, zweryfikowany stan prawny i rzuty. Przy każdym ogłoszeniu znajdziesz bezpośredni kontakt do mnie.
+          </p>
+          <ul class="space-y-2.5 mb-8 text-sm text-slate-600">
+            <li class="flex items-center gap-2.5">{{i:circle-check|w-[18px] h-[18px] text-emerald-600}}<span>Pełna fotodokumentacja</span></li>
+            <li class="flex items-center gap-2.5">{{i:circle-check|w-[18px] h-[18px] text-emerald-600}}<span>Sprawdzona księga wieczysta</span></li>
+            <li class="flex items-center gap-2.5">{{i:circle-check|w-[18px] h-[18px] text-emerald-600}}<span>Bezpośredni kontakt do doradcy</span></li>
+          </ul>
+        </div>
+        <a class="w-full inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-display text-sm font-semibold tracking-wide transition-colors shadow-sm" href="{{otodomUrl}}" rel="noopener noreferrer" target="_blank">
+          Zobacz moje oferty na Otodom
+          {{i:external-link|w-[18px] h-[18px]}}
+        </a>
+      </div>
+      <!-- Morizon -->
+      <div class="bg-white rounded-2xl p-8 lg:p-10 border border-surface-border shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+        <div>
+          <div class="flex items-center gap-3 pb-6 mb-6 border-b border-slate-100">
+            <div class="w-12 h-12 rounded-xl bg-slate-100 text-slate-900 border border-slate-200 font-display font-extrabold flex items-center justify-center text-lg">MZ</div>
+            <div>
+              <h3 class="font-display font-bold text-xl text-slate-900">Morizon.pl</h3>
+              <p class="text-xs text-slate-500 font-medium">Profil doradcy</p>
+            </div>
+          </div>
+          <h4 class="font-display font-bold text-lg text-slate-900 mb-2">Śródmieście, Mokotów, Żoliborz, Wilanów</h4>
+          <p class="text-slate-600 text-sm leading-relaxed mb-6">
+            Wyselekcjonowane oferty w kluczowych dzielnicach stolicy wraz z opisem okolicy, infrastruktury i komunikacji.
+          </p>
+          <ul class="space-y-2.5 mb-8 text-sm text-slate-600">
+            <li class="flex items-center gap-2.5">{{i:circle-check|w-[18px] h-[18px] text-emerald-600}}<span>Aktualne statusy lokali</span></li>
+            <li class="flex items-center gap-2.5">{{i:circle-check|w-[18px] h-[18px] text-emerald-600}}<span>Jasne warunki transakcji</span></li>
+            <li class="flex items-center gap-2.5">{{i:circle-check|w-[18px] h-[18px] text-emerald-600}}<span>Rzuty i informacje o czynszu</span></li>
+          </ul>
+        </div>
+        <a class="w-full inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-900 border border-slate-300 font-display text-sm font-semibold tracking-wide transition-colors" href="{{morizonUrl}}" rel="noopener noreferrer" target="_blank">
+          Zobacz moje oferty na Morizon
+          {{i:external-link|w-[18px] h-[18px]}}
+        </a>
+      </div>
+    </div>
+
+    <!-- Off-market -->
+    <div class="mt-8 p-7 lg:p-8 rounded-2xl bg-white border border-slate-300 shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+      <div class="flex items-start md:items-center gap-4">
+        <div class="w-12 h-12 rounded-xl bg-slate-100 flex items-center justify-center text-slate-900 shrink-0">{{i:key-round|w-6 h-6}}</div>
+        <div>
+          <h4 class="font-display font-bold text-lg text-slate-900">Szukasz nieruchomości off-market (dyskretna sprzedaż)?</h4>
+          <p class="text-sm text-slate-600 mt-0.5">Część mieszkań nie trafia na portale na prośbę właścicieli. Skontaktuj się ze mną bezpośrednio.</p>
+        </div>
+      </div>
+      <a class="inline-flex items-center justify-center px-6 py-3.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-white font-display text-xs uppercase tracking-wider font-semibold shrink-0 transition-colors" href="#kontakt">
+        Zapytaj o oferty off-market
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- 3. USŁUGI -->
+<section class="on-dark w-full py-24 bg-slate-950 text-white border-b border-slate-800" id="uslugi">
+  <div class="max-w-[1380px] mx-auto px-6 lg:px-12">
+    <div class="max-w-2xl mb-14">
+      <span class="text-xs uppercase tracking-wider font-semibold font-display text-slate-400">Specjalizacja</span>
+      <h2 class="font-display font-bold text-3xl lg:text-4xl text-white mt-1">Zakres usług i wsparcia</h2>
+      <p class="text-slate-300 text-base mt-2 leading-relaxed">Indywidualne podejście do każdego klienta. Bez szablonów, z osobną strategią dla każdej transakcji.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="bg-slate-900/90 rounded-2xl p-8 border border-slate-800 flex flex-col justify-between hover:border-slate-700 transition-all group">
+        <div>
+          <div class="w-12 h-12 rounded-xl bg-slate-800 text-white flex items-center justify-center mb-6 border border-slate-700/80">{{i:house|w-[26px] h-[26px]}}</div>
+          <h3 class="font-display font-bold text-xl text-white mb-3">Sprzedaż mieszkań</h3>
+          <p class="text-slate-300 text-sm leading-relaxed mb-6">Przygotowanie nieruchomości, sesja fotograficzna, celowany marketing i twarde negocjacje ceny.</p>
+        </div>
+        <div class="pt-5 border-t border-slate-800 text-xs font-semibold text-slate-200 font-display flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-emerald-500"></span>Strategia szyta na miarę</div>
+      </div>
+      <div class="bg-slate-900/90 rounded-2xl p-8 border border-slate-800 flex flex-col justify-between hover:border-slate-700 transition-all group">
+        <div>
+          <div class="w-12 h-12 rounded-xl bg-slate-800 text-white flex items-center justify-center mb-6 border border-slate-700/80">{{i:search-check|w-[26px] h-[26px]}}</div>
+          <h3 class="font-display font-bold text-xl text-white mb-3">Zakup nieruchomości</h3>
+          <p class="text-slate-300 text-sm leading-relaxed mb-6">Poszukiwanie lokali według Twoich kryteriów, weryfikacja ksiąg wieczystych, stanu technicznego i bezpieczne przejście przez notariat.</p>
+        </div>
+        <div class="pt-5 border-t border-slate-800 text-xs font-semibold text-slate-200 font-display flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-emerald-500"></span>Weryfikacja stanu prawnego</div>
+      </div>
+      <div class="bg-slate-900/90 rounded-2xl p-8 border border-slate-800 flex flex-col justify-between hover:border-slate-700 transition-all group">
+        <div>
+          <div class="w-12 h-12 rounded-xl bg-slate-800 text-white flex items-center justify-center mb-6 border border-slate-700/80">{{i:chart-column|w-[26px] h-[26px]}}</div>
+          <h3 class="font-display font-bold text-xl text-white mb-3">Wycena i analiza</h3>
+          <p class="text-slate-300 text-sm leading-relaxed mb-6">Realne ceny transakcyjne z Rejestru Cen i Wartości Nieruchomości, a nie zawyżone kwoty ofertowe z portali.</p>
+        </div>
+        <div class="pt-5 border-t border-slate-800 text-xs font-semibold text-slate-200 font-display flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-emerald-500"></span>Oparta na danych rynkowych</div>
+      </div>
+      <div class="bg-slate-900/90 rounded-2xl p-8 border border-slate-800 flex flex-col justify-between hover:border-slate-700 transition-all group">
+        <div>
+          <div class="w-12 h-12 rounded-xl bg-slate-800 text-white flex items-center justify-center mb-6 border border-slate-700/80">{{i:building-2|w-[26px] h-[26px]}}</div>
+          <h3 class="font-display font-bold text-xl text-white mb-3">Wynajem lokali</h3>
+          <p class="text-slate-300 text-sm leading-relaxed mb-6">Selekcja najemców, bezpieczne umowy (najem okazjonalny/instytucjonalny) i protokoły zdawczo-odbiorcze.</p>
+        </div>
+        <div class="pt-5 border-t border-slate-800 text-xs font-semibold text-slate-200 font-display flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-emerald-500"></span>Zabezpieczenie interesów właściciela</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. PROCES -->
+<section class="w-full py-24 bg-white border-b border-surface-border" id="proces">
+  <div class="max-w-[1380px] mx-auto px-6 lg:px-12">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <span class="text-xs uppercase tracking-wider font-semibold font-display text-slate-500">Przejrzysty proces</span>
+      <h2 class="font-display font-bold text-3xl lg:text-4xl text-slate-900 mt-1">Jak wygląda współpraca</h2>
+      <p class="text-slate-600 text-base mt-2 leading-relaxed">Krok po kroku do udanej transakcji. Jasne zasady i brak nieprzyjemnych niespodzianek.</p>
+    </div>
+    <ol class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <li class="bg-slate-50 rounded-2xl p-8 border border-slate-200">
+        <div class="flex items-center justify-between mb-6"><span class="font-display font-extrabold text-3xl text-slate-900">01</span><span class="w-3 h-3 rounded-full bg-slate-900"></span></div>
+        <h3 class="font-display font-bold text-lg text-slate-900 mb-2">Rozmowa i analiza</h3>
+        <p class="text-slate-600 text-sm leading-relaxed">Spotkanie lub telefon. Ustalamy priorytety, oczekiwania finansowe, ramy czasowe i stan prawny lokalu.</p>
+      </li>
+      <li class="bg-slate-50 rounded-2xl p-8 border border-slate-200">
+        <div class="flex items-center justify-between mb-6"><span class="font-display font-extrabold text-3xl text-slate-900">02</span><span class="w-3 h-3 rounded-full bg-slate-900"></span></div>
+        <h3 class="font-display font-bold text-lg text-slate-900 mb-2">Strategia &amp; audyt</h3>
+        <p class="text-slate-600 text-sm leading-relaxed">Sprawdzamy księgi wieczyste, tworzymy plan marketingowy, robimy sesję zdjęciową i ustalamy właściwą cenę rynkową.</p>
+      </li>
+      <li class="bg-slate-50 rounded-2xl p-8 border border-slate-200">
+        <div class="flex items-center justify-between mb-6"><span class="font-display font-extrabold text-3xl text-slate-900">03</span><span class="w-3 h-3 rounded-full bg-slate-900"></span></div>
+        <h3 class="font-display font-bold text-lg text-slate-900 mb-2">Prezentacje &amp; negocjacje</h3>
+        <p class="text-slate-600 text-sm leading-relaxed">Prowadzę każde spotkanie osobiście, weryfikuję zdolność finansową kupujących i negocjuję najkorzystniejszą cenę.</p>
+      </li>
+      <li class="bg-slate-50 rounded-2xl p-8 border border-slate-200">
+        <div class="flex items-center justify-between mb-6"><span class="font-display font-extrabold text-3xl text-slate-900">04</span><span class="w-3 h-3 rounded-full bg-slate-900"></span></div>
+        <h3 class="font-display font-bold text-lg text-slate-900 mb-2">Finalizacja u notariusza</h3>
+        <p class="text-slate-600 text-sm leading-relaxed">Przygotowuję dokumenty z kancelarią notarialną i asystuję przy podpisaniu aktu oraz przekazaniu kluczy.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- 5. O MNIE -->
+<section class="on-dark w-full py-24 bg-slate-950 text-white" id="o-mnie">
+  <div class="max-w-[1380px] mx-auto px-6 lg:px-12">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+      <div class="lg:col-span-5">
+        <!-- TODO: podmienić na zdjęcie Marcina: src/img/marcin.jpg (format 4:5) -->
+        <div class="relative max-w-[450px] mx-auto rounded-2xl overflow-hidden border border-slate-800 shadow-2xl bg-slate-900 aspect-[4/5]">
+          <div class="absolute inset-0 flex items-center justify-center font-display font-extrabold text-7xl text-slate-700" aria-hidden="true">MR</div>
+          <img alt="Marcin Rumianowski – doradca nieruchomości" class="absolute inset-0 w-full h-full object-cover" src="/img/marcin.jpg" loading="lazy" onerror="this.remove()">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+          <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-slate-900/90 backdrop-blur-md border border-slate-700/80">
+            <span class="font-display font-bold text-lg text-white block">Marcin Rumianowski</span>
+            <span class="text-xs uppercase tracking-wider text-slate-400 font-medium">Doradca transakcyjny Warszawa</span>
+          </div>
+        </div>
+      </div>
+      <div class="lg:col-span-7 flex flex-col gap-6">
+        <div>
+          <span class="text-xs uppercase tracking-wider font-semibold font-display text-slate-400">O doradcy</span>
+          <h2 class="font-display font-bold text-3xl lg:text-5xl text-white mt-1 leading-tight">Doświadczenie, spokój i pełne bezpieczeństwo Twojego kapitału.</h2>
+        </div>
+        <!-- TODO: zastąpić własnym opisem Marcina -->
+        <p class="text-slate-300 text-base lg:text-lg leading-relaxed">
+          Na rynku warszawskim działam od ponad dekady. Łączę kompetencje analityczne z doświadczeniem negocjacyjnym. Prowadzę ograniczoną liczbę nieruchomości jednocześnie, dzięki czemu każdy klient ma mój bezpośredni numer i pełną uwagę.
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
+          <div class="p-5 rounded-xl bg-slate-900/80 border border-slate-800 flex flex-col gap-1">
+            <span class="text-xs uppercase tracking-wider text-slate-400 font-semibold font-display">Doświadczenie</span>
+            <span class="font-display font-bold text-xl text-white">10+ lat</span>
+            <span class="text-xs text-slate-400">Rynek warszawski</span>
+          </div>
+          <div class="p-5 rounded-xl bg-slate-900/80 border border-slate-800 flex flex-col gap-1">
+            <span class="text-xs uppercase tracking-wider text-slate-400 font-semibold font-display">Ubezpieczenie</span>
+            <span class="font-display font-bold text-xl text-white">Polisa OC</span>
+            <span class="text-xs text-slate-400">Zgodnie z wymogami ustawy</span>
+          </div>
+          <div class="p-5 rounded-xl bg-slate-900/80 border border-slate-800 flex flex-col gap-1">
+            <span class="text-xs uppercase tracking-wider text-slate-400 font-semibold font-display">Podejście</span>
+            <span class="font-display font-bold text-xl text-white">1 na 1</span>
+            <span class="text-xs text-slate-400">Bezpośredni kontakt z doradcą</span>
+          </div>
+        </div>
+        <div class="p-5 rounded-xl bg-slate-900/60 border border-slate-800/80">
+          <span class="text-xs uppercase tracking-wider text-slate-400 font-semibold font-display block mb-2">Główny rejon działania</span>
+          <ul class="flex flex-wrap gap-2 text-xs font-medium">
+            <li class="px-3 py-1 rounded-md bg-slate-800 text-slate-200">Mokotów</li>
+            <li class="px-3 py-1 rounded-md bg-slate-800 text-slate-200">Śródmieście &amp; Powiśle</li>
+            <li class="px-3 py-1 rounded-md bg-slate-800 text-slate-200">Żoliborz</li>
+            <li class="px-3 py-1 rounded-md bg-slate-800 text-slate-200">Wilanów</li>
+            <li class="px-3 py-1 rounded-md bg-slate-800 text-slate-200">Wola</li>
+            <li class="px-3 py-1 rounded-md bg-slate-800 text-slate-200">Ochota</li>
+          </ul>
+        </div>
+        <div class="pt-2">
+          <a class="inline-flex items-center justify-center px-7 py-3.5 rounded-lg bg-white text-slate-950 hover:bg-slate-100 font-display text-sm font-semibold tracking-wide transition-all shadow-md" href="#kontakt">
+            Porozmawiajmy o Twojej nieruchomości
+            {{i:arrow-right|ml-2 w-[18px] h-[18px]}}
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. OPINIE GOOGLE -->
+<section class="w-full py-24 bg-surface-container border-b border-surface-border" id="opinie">
+  <div class="max-w-[1380px] mx-auto px-6 lg:px-12">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+      <div>
+        <span class="text-xs uppercase tracking-wider font-semibold font-display text-slate-500">Referencje</span>
+        <h2 class="font-display font-bold text-3xl lg:text-4xl text-slate-900 mt-1">Opinie moich klientów</h2>
+        <div id="reviews-summary" class="hidden items-center gap-3 mt-2">
+          <div class="flex text-amber-500" aria-hidden="true">
+            {{i:star|w-5 h-5 fill-current}}{{i:star|w-5 h-5 fill-current}}{{i:star|w-5 h-5 fill-current}}{{i:star|w-5 h-5 fill-current}}{{i:star|w-5 h-5 fill-current}}
+          </div>
+          <span id="reviews-summary-text" class="text-sm font-semibold text-slate-900 font-display"></span>
+        </div>
+      </div>
+      <div class="flex items-center gap-3">
+        <div class="flex gap-2">
+          <button type="button" data-rail-prev="reviews-rail" class="p-2.5 rounded-lg bg-white border border-slate-300 hover:bg-slate-50" aria-label="Poprzednie opinie">{{i:chevron-left|w-5 h-5}}</button>
+          <button type="button" data-rail-next="reviews-rail" class="p-2.5 rounded-lg bg-white border border-slate-300 hover:bg-slate-50" aria-label="Następne opinie">{{i:chevron-right|w-5 h-5}}</button>
+        </div>
+        <a class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-white hover:bg-slate-50 text-slate-900 border border-slate-300 font-display text-xs uppercase tracking-wider font-semibold shadow-sm transition-colors" href="{{googleProfileUrl}}" rel="noopener noreferrer" target="_blank">
+          Zobacz profil Google
+          {{i:external-link|w-4 h-4}}
+        </a>
+      </div>
+    </div>
+    <div id="reviews-rail" class="rail" tabindex="0" role="region" aria-label="Karuzela opinii z Google"></div>
+  </div>
+</section>
+
+<!-- 7. KONTAKT -->
+<section class="w-full py-24 bg-white" id="kontakt">
+  <div class="max-w-[1380px] mx-auto px-6 lg:px-12">
+    <div class="max-w-3xl mb-12">
+      <span class="text-xs uppercase tracking-wider font-semibold font-display text-slate-500">Bezpośredni kontakt</span>
+      <h2 class="font-display font-bold text-3xl lg:text-4xl text-slate-900 mt-1">Porozmawiajmy bez zbędnych barier</h2>
+      <p class="text-slate-600 text-base mt-2 leading-relaxed">Nie ma infolinii ani długich formularzy. Odbieram osobiście lub oddzwaniam tak szybko, jak to możliwe.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <a class="p-8 rounded-2xl bg-slate-50 border border-slate-200 hover:border-slate-900 hover:bg-slate-100/80 transition-all flex flex-col justify-between group shadow-sm" href="tel:{{phone}}">
+        <div>
+          <div class="w-12 h-12 rounded-xl bg-slate-900 text-white flex items-center justify-center mb-6">{{i:phone|w-6 h-6}}</div>
+          <span class="text-xs uppercase tracking-wider text-slate-500 font-semibold font-display block">Telefon bezpośredni</span>
+          <span class="font-display font-bold text-lg text-slate-900 block mt-1">{{phoneDisplay}}</span>
+        </div>
+        <div class="pt-6 mt-6 border-t border-slate-200 flex items-center justify-between text-xs font-semibold text-slate-900 font-display"><span>Zadzwoń teraz</span>{{i:arrow-right|w-4 h-4 group-hover:translate-x-1 transition-transform}}</div>
+      </a>
+      <a class="p-8 rounded-2xl bg-slate-50 border border-slate-200 hover:border-emerald-600 hover:bg-slate-100/80 transition-all flex flex-col justify-between group shadow-sm" href="https://wa.me/{{whatsapp}}" rel="noopener noreferrer" target="_blank">
+        <div>
+          <div class="w-12 h-12 rounded-xl bg-emerald-700 text-white flex items-center justify-center mb-6">{{i:message-circle|w-6 h-6}}</div>
+          <span class="text-xs uppercase tracking-wider text-slate-500 font-semibold font-display block">Czat WhatsApp</span>
+          <span class="font-display font-bold text-lg text-slate-900 block mt-1">Napisz na WhatsApp</span>
+        </div>
+        <div class="pt-6 mt-6 border-t border-slate-200 flex items-center justify-between text-xs font-semibold text-emerald-800 font-display"><span>Szybka odpowiedź</span>{{i:arrow-right|w-4 h-4 group-hover:translate-x-1 transition-transform}}</div>
+      </a>
+      <a class="p-8 rounded-2xl bg-slate-50 border border-slate-200 hover:border-slate-900 hover:bg-slate-100/80 transition-all flex flex-col justify-between group shadow-sm" href="mailto:{{email}}">
+        <div>
+          <div class="w-12 h-12 rounded-xl bg-slate-900 text-white flex items-center justify-center mb-6">{{i:mail|w-6 h-6}}</div>
+          <span class="text-xs uppercase tracking-wider text-slate-500 font-semibold font-display block">Poczta e-mail</span>
+          <span class="font-display font-bold text-base text-slate-900 block mt-1 break-all">{{email}}</span>
+        </div>
+        <div class="pt-6 mt-6 border-t border-slate-200 flex items-center justify-between text-xs font-semibold text-slate-900 font-display"><span>Wyślij wiadomość</span>{{i:arrow-right|w-4 h-4 group-hover:translate-x-1 transition-transform}}</div>
+      </a>
+      <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col justify-between shadow-sm">
+        <div>
+          <div class="w-12 h-12 rounded-xl bg-slate-900 text-white flex items-center justify-center mb-6">{{i:map-pin|w-6 h-6}}</div>
+          <span class="text-xs uppercase tracking-wider text-slate-500 font-semibold font-display block">Biuro &amp; spotkania</span>
+          <span class="font-display font-bold text-base text-slate-900 block mt-1">{{street}}</span>
+          <span class="text-xs text-slate-600 block mt-0.5">{{postalCity}}</span>
+        </div>
+        <div class="pt-6 mt-6 border-t border-slate-200 text-xs text-slate-600 font-medium">Po wcześniejszym kontakcie</div>
+      </div>
+    </div>
+    <!-- TODO: potwierdzić godziny z Marcinem -->
+    <div class="mt-8 p-6 rounded-2xl bg-slate-100 border border-slate-200 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <span class="w-3 h-3 rounded-full bg-emerald-500 shrink-0"></span>
+        <span class="text-sm text-slate-700 font-medium">Dostępność telefoniczna: <strong>poniedziałek – piątek 09:00 – 19:00</strong>, soboty do uzgodnienia.</span>
+      </div>
+      <div class="flex items-center gap-2 text-xs text-slate-600">{{i:lock|w-[18px] h-[18px]}}<span>Pełna poufność powierzonych informacji i dokumentów</span></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- STOPKA -->
+<footer class="w-full bg-slate-950 text-white pt-16 pb-12 border-t border-slate-800">
+  <div class="max-w-[1380px] mx-auto px-6 lg:px-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pb-12 border-b border-slate-800">
+      <div class="flex flex-col gap-4">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-lg bg-white text-slate-950 flex items-center justify-center font-display font-extrabold text-base">MR</div>
+          <div>
+            <span class="font-display font-bold text-base text-white block">Marcin Rumianowski</span>
+            <span class="text-xs text-slate-400 uppercase tracking-wider font-medium">Doradca nieruchomości</span>
+          </div>
+        </div>
+        <p class="text-xs text-slate-400 leading-relaxed">Doradztwo transakcyjne na warszawskim rynku mieszkań. Sprzedaż, zakup, wynajem i wycena.</p>
+      </div>
+      <div class="flex flex-col gap-3">
+        <h4 class="font-display text-xs uppercase tracking-wider text-slate-300 font-bold">Kontakt bezpośredni</h4>
+        <div class="space-y-2 text-sm text-slate-400">
+          <div class="flex items-center gap-2">{{i:phone|w-[18px] h-[18px] text-slate-500}}<a class="hover:text-white transition-colors" href="tel:{{phone}}">{{phoneDisplay}}</a></div>
+          <div class="flex items-center gap-2">{{i:mail|w-[18px] h-[18px] text-slate-500}}<a class="hover:text-white transition-colors" href="mailto:{{email}}">{{email}}</a></div>
+          <div class="flex items-start gap-2">{{i:map-pin|w-[18px] h-[18px] text-slate-500}}<span>{{street}}, Warszawa</span></div>
+        </div>
+      </div>
+      <div class="flex flex-col gap-3">
+        <h4 class="font-display text-xs uppercase tracking-wider text-slate-300 font-bold">Dzielnice</h4>
+        <ul class="space-y-1.5 text-xs text-slate-400">
+          <li>Mokotów &amp; Sadyba</li><li>Śródmieście &amp; Powiśle</li><li>Żoliborz &amp; Bielany</li><li>Wilanów &amp; Ursynów</li><li>Wola &amp; Ochota</li>
+        </ul>
+      </div>
+      <div class="flex flex-col gap-3">
+        <h4 class="font-display text-xs uppercase tracking-wider text-slate-300 font-bold">Nawigacja</h4>
+        <ul class="space-y-1.5 text-xs text-slate-400">
+          <li><a class="hover:text-white transition-colors" href="#oferty">Aktualne oferty</a></li>
+          <li><a class="hover:text-white transition-colors" href="#uslugi">Zakres usług</a></li>
+          <li><a class="hover:text-white transition-colors" href="#proces">Etapy współpracy</a></li>
+          <li><a class="hover:text-white transition-colors" href="#o-mnie">O doradcy</a></li>
+          <li><a class="hover:text-white transition-colors" href="#opinie">Opinie z Google</a></li>
+          <li><a class="hover:text-white transition-colors" href="#kontakt">Dane kontaktowe</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+      <p>© <span id="year">2026</span> Marcin Rumianowski. Wszelkie prawa zastrzeżone.</p>
+      <a class="hover:text-white transition-colors" href="/polityka-prywatnosci/">Polityka prywatności</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Pasek szybkiego kontaktu (mobile) -->
+<div class="md:hidden fixed bottom-0 inset-x-0 z-40 grid grid-cols-2 gap-px bg-slate-700 border-t border-slate-700">
+  <a href="tel:{{phone}}" class="flex items-center justify-center gap-2 py-4 bg-slate-900 text-white font-display text-sm font-semibold">{{i:phone|w-[18px] h-[18px]}}Zadzwoń</a>
+  <a href="https://wa.me/{{whatsapp}}" rel="noopener noreferrer" target="_blank" class="flex items-center justify-center gap-2 py-4 bg-emerald-700 text-white font-display text-sm font-semibold">{{i:message-circle|w-[18px] h-[18px]}}WhatsApp</a>
+</div>
+
+<script src="/js/main.js" defer></script>
+</body>
+</html>

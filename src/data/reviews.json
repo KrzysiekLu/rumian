@@ -1,0 +1,10 @@
+{
+  "sample": true,
+  "rating": 5,
+  "count": 3,
+  "reviews": [
+    { "author": "Przykładowa Opinia A", "rating": 5, "when": "przykład", "text": "Przykładowy tekst opinii widoczny tylko lokalnie i w podglądzie. Zostanie zastąpiony prawdziwymi opiniami z Google po podłączeniu klucza API." },
+    { "author": "Przykładowa Opinia B", "rating": 5, "when": "przykład", "text": "Drugi przykładowy tekst opinii, który pozwala sprawdzić wygląd karuzeli na komputerze i telefonie." },
+    { "author": "Przykładowa Opinia C", "rating": 5, "when": "przykład", "text": "Trzeci przykładowy tekst opinii. Produkcyjnie ten plik jest ignorowany, dopóki flaga sample ma wartość true." }
+  ]
+}

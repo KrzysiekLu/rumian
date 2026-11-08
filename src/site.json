@@ -1,0 +1,16 @@
+{
+  "siteUrl": "https://example.pl",
+  "name": "Marcin Rumianowski",
+  "phone": "+48600000000",
+  "phoneDisplay": "+48 600 000 000",
+  "whatsapp": "48600000000",
+  "email": "kontakt@example.pl",
+  "street": "ul. Mokotowska 49",
+  "postalCity": "00-542 Warszawa",
+  "otodomUrl": "https://www.otodom.pl",
+  "morizonUrl": "https://www.morizon.pl",
+  "googleProfileUrl": "https://www.google.com/maps",
+  "adminName": "Marcin Rumianowski",
+  "adminAddress": "ul. Mokotowska 49, 00-542 Warszawa",
+  "adminNip": "0000000000"
+}
